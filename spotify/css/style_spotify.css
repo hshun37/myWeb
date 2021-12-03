@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    display: contents;
+    font-family: spotify-circular, Helvetica, Arial, sans-serif;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1ed760;
+}
+
+nav {
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: space-around; /* 세로 가운데로 정렬 */
+    align-items: center; /* 가로정렬 */
+}
+
+main {
+    height: 960px;
+    background-color: rgb(41, 65, 171);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts.svg);
+    background-size: 175%;
+    background-position: 46% 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    height: 530px;
+    background-color: black;
+    padding: 80px 0 50px;
+}
+
+.nav-item {
+    padding: 28px 17px;
+    font-weight: 700;
+}
+
+/* .mai-container {
+    border: 1px solid red;
+} */
+
+.headline {
+    font-size: 156px;
+    font-weight: 900;
+    color: #1ed760;
+    position: relative;
+    left: 250px;
+    padding-bottom: 40px;
+}
+
+.first-headline {
+    position: relative;
+    left: -2.5em;
+}
+
+.sub-headline {
+    color: #1ed760;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 40px;
+}
+
+.button-area {
+    text-align: center;
+}
+
+.button-style {
+    padding: 14px 32px;
+    background-color: #1ed760;
+    border-radius: 500px;
+    font-size: inherit;
+    color: #2941ab;
+    font-weight: 700;
+    border: none;
+}
+
+.button-style:hover {
+    transform: scale(1.1);
+}
+
+.footer_box {
+    width: 1170px;
+}
+
+.footer-first {
+    height: 500px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sub-footer-1 {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    
+}
+
+.sub-title {
+    margin: 20px 0;
+    color: #919496;
+}
+
+.sub-title-sub {
+    padding: 3px 0 15px;
+}
+
+.sub-footer-2 {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon {
+    width: 54px;
+    height: 54px;
+    margin: 0px 15px 0px 0px;
+    background-color: #222322;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon-usa {
+    color: #919496;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+}
+
+.footer-text {
+    display: flex;
+    justify-content: space-between;
+    color: #919496;
+    margin:0 15px ;
+}
+
+.sub-text {
+    margin-right: 24px;
+    color: #919496;
+}
+

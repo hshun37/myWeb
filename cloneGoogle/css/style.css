@@ -1,0 +1,113 @@
+body {
+    display: contents;
+}
+
+/*헤더 시작*/
+.navbar {
+    float: right;
+    margin: 20px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-size: 100%;
+}
+
+.nav-item:hover {
+    text-decoration: underline;
+}
+/*헤더 끝*/
+
+
+
+/*메인 시작*/
+.main {
+    margin-top: 200px;
+    text-align: center;
+}
+
+.input-area {
+    margin-top: 20px;
+}
+
+.input-box {
+    width: 584px;
+    height: 46px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.search-icon {
+    position: relative;
+    left: 40px;
+    color: #9aa0a6;
+}
+
+.mic-icon {
+    position: relative;
+    right: 40px;
+    color: #9aa0a6;
+}
+
+.button-area {
+    padding-top: 18px;
+}
+
+.button-style {
+    height: 36px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-style:hover {
+    border: 1px solid #849bb356;
+    box-shadow: 0 1px 1px rgb(0, 0, 0 / 10%);
+}
+
+.font-style {
+    font-size: 90%;
+    font-style: italic;
+    
+}
+/*메인 끝*/
+
+
+/*푸터 시작*/
+.footer {
+    position: absolute;
+    bottom: 0px;
+    background-color: #f2f2f2;
+    width: 100%;
+    
+}
+
+.first-line {
+    padding: 15px 30px;
+    border-bottom:  1px solid #dadce0;
+    font-size: 15px;
+    color: rgb(0, 0, 0, .54);
+    
+}
+
+.second-line {
+    padding: 15px 30px;
+    font-size: 15px;
+    color: rgb(0, 0, 0, .54);
+}
+
+.second-line-first {
+    margin-left: 20px;
+}
+
+.second-line-second {
+    float: right;
+    margin-right: 20px;
+}
+
+/*푸터 끝*/
