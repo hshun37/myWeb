@@ -1,0 +1,16 @@
+/* 자바스크립트 전체부분 */
+.hidden {
+    display: none;
+}
+
+/* 스타일폰트 */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
