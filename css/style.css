@@ -3,8 +3,8 @@
 }
 
 .rule {
-    height: 100vh;
-    
+    width: 1080px;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,6 +51,14 @@
     width: 90%;
 }
 
+.jsp-style {
+    width: 150px; height: 110px; padding-top: 30px;
+}
+
+.spring {
+    width: 200px; height: 150px; padding-left: 40px;
+}
+
 .list-in {
     display: flex;
     justify-content: flex-start;
@@ -87,27 +95,35 @@
     justify-content: space-between;
 }
 
-@media screen and (max-width: 48rem) {
-    .pre-title {
-      font-size: 10vw;
+.footer-border {
+    border-top: 1px solid black;
+}
+
+@media screen and ( max-width: 1080px ) {
+    
+    .auto-mobile {
+    width: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     }
-    .title {
-      font-size: 12vw;
+    .none {
+        display: none;
     }
-    .sub-title {
-      font-size: 11vw;
+    #rule {
+        width: auto;
     }
-    .form-control {
-      font-size: 8vw;
-      max-width: 500px;
-      margin-right: 0px;
+    #header-1 {
+      float: none;
+      width: auto;
+    } 
+    .skill-mobile {
+        margin-top: 20px;
+        width: 150px;
+        height: 200px;
     }
-    .main-img {
-      width: 40vw;
-    }
-    .button-reset {
-      font-size: 5vw;
-      width: 80px;
-      height: 60px;
+    .skile-jsp-spring {
+        
     }
   }
