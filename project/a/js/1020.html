@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script>
+  	$(document).ready(function(){
+		//$('h1').css('color','red'); // $('h1') : 선택자     css('') : 값
+		//$('h1').css('background','black');
+		/*
+		$('.box').css('background','red');
+		$('.box').css('width',100);
+		$('.box').css('height',100);
+		$('.box').css('margin',10);
+		$('.box').css('float','left');
+		*/
+		$('.box').css({
+			float: 'left',
+			width: 100,
+			height: 100,
+			margin: 10,
+			background : 'red'
+		});
+
+	
+	});
+	//기본형식
+
+  </script>
+ </head>
+ <body>
+	<h1>헤더</h1>
+	<h1>헤더</h1>
+	<h1>헤더</h1>
+
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+ </body>
+</html>

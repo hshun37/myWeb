@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <style>
+	div {
+	width:50px;
+	height:50px;
+	background:orange;
+	position:relative;
+	}
+  </style>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script>
+  	$(document).ready(function(){
+		$('div').hover(function(){
+			$(this).animate({left:500},'slow')
+		},function(){
+			$(this).animate({left:0},'slow');
+		});
+	});
+  </script>
+
+ </head>
+ <!--위치관련 css가 있을 경우 위치속성이 들어가야한다. (relative, absolute)-->
+ <body>
+	<div></div><div></div>
+	<div></div><div></div>
+	<div></div><div></div>
+ </body>
+</html>
+
+
+
+

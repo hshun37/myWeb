@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="user-scalable=yes,initial-scale=1">
+  <title>Document</title>
+  <style>
+	* {
+	padding:0;
+	margin:0;
+	}
+	
+	body {
+		width:960px;
+		margin:0 auto;
+		}
+
+	li {
+		list-style:none;
+		}
+
+	#menu {
+		width:260;
+		float:left;
+		}
+
+	#section {
+		width:700px;
+		float:right;
+		}
+
+	@media screen and (max-width:767px) {
+		body {
+			width:auto;
+			}
+		#menu {
+			width:auto;
+			float:none;
+			}
+		#section {
+			width:auto;
+			float:none;
+			}
+
+  /* 스마트폰 크기 
+	@media screen and (max-width:767px) {
+		body {
+			background:red;
+			}
+		}
+
+	/* 태블릿 pc 
+	@media screen and (min-width:768px) and (max-width:959px) {
+		body {
+			background:green;
+			}
+		}
+
+	@media screen and (min-width:960px) {
+		body {
+			background:blue;
+			}
+		}
+
+	/*프린트 영역
+	@media print {
+		body {
+			background:blue;
+			}
+		}
+	*/
+  </style>
+ </head>
+ <!--
+ <body>
+	<h1>모바일 웹사이트</h1>
+	<p>모바일 웹사이트 레이아웃 구성입니다.모바일 웹사이트 레이아웃 구성입니다.모바일 웹사이트 레이아웃 구성입니다.</p>
+
+ </body>
+ -->
+ <body>
+ 	<div id = "menu">
+		<ul>
+			<li>메뉴1</li>
+			<li>메뉴1</li>
+			<li>메뉴1</li>
+		</ul>
+	</div>
+
+	<div id = "section">
+		<h1>반응형 웹사이트</h1>
+		<p>반응형 웹사이트 레이아웃 구성입니다.</p>
+	</div>
+
+</html>

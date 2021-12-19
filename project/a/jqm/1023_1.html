@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Document</title>
+ <!--Jquery mobile-->
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+ <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+ 
+ </head>
+ <body>
+ 	<!--전체 문서 시작-->
+	<div data-role="page" id="page1">
+		<!--헤더 시작-->
+		<div data-role="header">
+			<h1>페이지1 헤더</h1>
+		</div>
+		<!--헤더 끝-->
+
+		<!--본문 시작-->
+		<div data-role="content">
+			<h2>본문</h2>
+			<a href="#page2" data-transition="slide">페이지2 바로가기</a>
+		</div>
+		<!--본문 끝-->
+
+		<!--푸터 시작-->
+		<div data-role="footer">
+			<h4>페이지1 푸터</h4>
+		</div>
+		<!--푸터 끝-->
+	</div>
+	<!--전체 문서 끝-->
+
+	<!--전체 문서 시작-->
+	<div data-role="page" id="page2">
+		<!--헤더 시작-->
+		<div data-role="header">
+			<h1>페이지2 헤더</h1>
+		</div>
+		<!--헤더 끝-->
+
+		<!--본문 시작-->
+		<div data-role="content">
+			<h2>본문</h2>
+			<a href="#page1" data-transition="flip">페이지1 바로가기</a>
+		</div>
+		<!--본문 끝-->
+
+		<!--푸터 시작-->
+		<div data-role="footer">
+			<h4>페이지2 푸터</h4>
+		</div>
+		<!--푸터 끝-->
+	</div>
+	<!--전체 문서 끝-->
+ </body>
+</html>
+
+
+
+
+
+
+
+

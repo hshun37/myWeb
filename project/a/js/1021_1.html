@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+ <!--애니메이션-->
+
+ <!--
+ <script>
+ 
+	$(document).ready(function(){
+		$('#box').css({
+			width:100,
+			height:100,
+			background:'red'
+			}).animate({
+				width:300,
+				opacity:0.5
+			},1000);
+		});
+ </script>
+ -->
+
+ <script>
+ 	$(document).ready(function(){
+		$('#box1').css({
+			width:100,
+			height:100,
+			background:'blue',
+			left:10,
+			top:10,
+			position:'absolute'
+			}).animate({
+				width:300,
+				opacity:0.5
+			},1000).animate({
+				opacity:1,
+				left:100,
+				top:200
+			},1000);
+		});
+ </script>
+ </head>
+ <body>
+	
+	<!--
+	<div id="box"></div>
+	-->
+	<div id="box1"></div>
+	<!--메서드 체이닝 : 애니메이션이 종료되고 난 후 다시 새로운 애니메이션을 적용시키는 방식--> 
+
+ </body>
+</html>
+
+
+
+
+
+

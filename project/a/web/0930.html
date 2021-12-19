@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <!--스타일시트 사용방법 3가지-->
+  <!--1. 내부 스타일시트-->
+  <!--2. 외부 스타일시트-->
+  <!--3. 인라인 스타일시트-->
+  <!--컴퓨터가 인식하는 우선순위 1 -> 2 -> 3-->
+	<!--
+  	<link rel = "stylesheet" href = "aaa.css"></link>
+	<style>
+		p{color : blue;}
+
+	</style>
+	-->
+	<!-- * : 모든 tag -->
+	<!--
+	<style>
+		* {
+			background-color: red;
+			color : yellow;
+			font-size : 18px;
+		}
+	</style>
+		-->
+	
+	<!-- .class 이름 : class 선택자, tag의 영향을 받지 않고 class 속성의 영향을 받는다. -->
+	<!--
+	<style>
+	
+		.class {color : red;}
+		.bg {background-color : blue;}
+
+		h1 {
+			background-color : yellow;
+		}
+
+		.b{
+			background-color : green;
+		}
+
+		.a{
+			background-color : pink;
+		}
+		
+		p{
+			color:red;
+		}
+	</style>
+	-->
+	 <!--
+ <body>
+	
+	<!--
+	<p style = "color : red">스타일시트</p>
+	<p>스타일시트</p>
+	<p>스타일시트</p>
+ </body>
+	-->
+
+ <!--
+ <body>
+	<h1 class = "a">CSS TEST1</h1>
+	<h1 class = "b">CSS TEST2</h1>
+	<h1 class = "class bg">CSS TEST3</h1>
+	<p class = "a">CSS TEST4</p>
+
+ </body>
+ -->
+	<!-- #아이디 이름 : 아이디 선택자, 문서의 하나 지정-->
+	<style>
+	/*
+		#header {
+			width : 800px;
+			background-color : red;
+			color : white;
+			margin : 0 auto;
+			}
+
+		#wrap {
+			width : 800px;
+			margin : 0 auto;
+			}
+
+		#aside {
+			width : 200px;
+			background : blue;
+			color : white;
+			float : left;
+			}
+		
+		#content {
+			width : 600px;
+			background : green;
+			color : white;
+			float : left;
+			}
+	*/
+	input[type = "text"] {background : #ddd; color : black; border : solid 1px; border-color : #999; height : 25px;}
+	
+	input[type = "password"] {background : black; color : white; border : dotted 1px; border-color : #999; height : 25px;}
+	
+	/*a:visited{color:red;}
+	a:hover{background:yellow;}
+	a:active{color:blue;}*/
+
+	a:visited{color:red;font-size:18px;text-decoration:none;}
+	a:hover{color:#000;font-size:18px;text-decoration:underline;}
+	a:active{color:blue;font-size:18px;text-decoration:none;}
+	a:link{color:#999; font-size : 18px; text-decoration:none;}
+
+	div.over {width:400px;padding:5px;border:solid 1px red;}
+	div.over:hover{background:green;}
+	
+	div.act {width:200px;height:200px;color:blue;background:yellow;padding:5px;opacity:0.9;}
+	div.act:hover{width:200px;height:100px;color:red;background:pink;padding:5px;opacity:0.5; transition:all 1.5s linear 0.5s;}
+	
+	</style>
+ </head>
+
+ <!-- 속성선택자 : 특정 속성과 값이 있는 태그 사용-->
+ <body>
+	<div class = "over">
+		<h3>가상 class 선택자</h3>
+		<p>마우스 오버시 변화를 느껴보세요</p>
+	</div>
+	
+	<div class = "act">
+		<h3>가상 class 선택자</h3>
+		<p>마우스 오버시 변화를 느껴보세요</p>
+	</div>		
+
+ 	<a href = "http://www.naver.com">naver로 바로가기</a><br>
+	<a href = "https://www.daegu.go.kr/">대구시청 바로가기</a><br>
+
+	<a href = "#">대구가톨릭대학교에 오신 것을 환영합니다.</a><br><br><br><br><br>
+ 	<form>
+		아이디 : <input type = "text"><br>
+		비밀번호 : <input type = "password">
+	</form>
+
+ 	<div id = "header">
+		<h1>헤더태그</h1>
+	</div>
+
+	<div id  ="wrap">
+
+		<div id = "aside">
+			<h1>aside태그</h1>
+		</div>
+
+		<div id = "content">
+			<h1>본문 태그</h1>
+		</div>
+
+	</div>
+
+ </body>
+</html>

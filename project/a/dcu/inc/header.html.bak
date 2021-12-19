@@ -1,0 +1,81 @@
+<?php
+session_start();
+?>
+
+<!--헤더시작-->
+	<div id="header">
+		<!--top 레이아웃-->
+		<div class="top">
+			<!--top 메뉴-->
+			<div class="top_box">
+				<!--top 왼쪽메뉴-->
+				<ul class="fl_left top_link">
+					<li>
+					<?php
+					if(!isset($_SESSION['user_id'])){
+					?>
+					<a href="http://whtjdrms1282.dothome.co.kr/dcu/login/login.php">로그인</a>
+					<?php
+					} else {
+					$user_name = $_SESSION['user_name'];
+					$user_id = $_SESSION['user_id'];
+					?>
+					<span style="color:#fff">
+					(<?php echo "$user_id";?>)
+					[<?php echo "$user_name"; ?>]님(<?php echo $_SESSION['user_member'];?>)</span>&nbsp;<a 
+					href="http://whtjdrms1282.dothome.co.kr/dcu/login/login_out.php">로그아웃</a>
+					<?php
+					}
+					?>
+					</li>
+					<li><a href="#">사이트맵</a></li>
+				</ul>
+				<!--top 왼쪽메뉴 끝-->
+
+				<!--top 오른쪽 메뉴-->
+				<ul class="fl_right">
+					<li><img src="http://whtjdrms1282.dothome.co.kr/img/covid19.png"><a href="#">코로나19 공지</a></li>
+					<li><a href="#">ENGLISH</a></li>
+					<li><a href="#">KOREAN</a></li>
+					<li>
+						<!--검색-->
+						<form method="post" action="">
+						<input type="text" placeholder="검색어를 입력하세요">
+						<img src="http://whtjdrms1282.dothome.co.kr/img/search01.png" alt="검색">
+						</form>
+						<!--검색 끝-->
+					</li>
+				</ul>
+				<!--top 오른쪽 메뉴 끝-->
+			</div>
+			<!--top 메뉴 끝-->
+
+		</div>
+		<!--top 레이아웃 끝-->
+		
+		<!--로고 및 메인메뉴 시작-->
+		<div id="gnb">
+			<!--로고 시작-->
+			<h1>
+				<a href="http://whtjdrms1282.dothome.co.kr/"><img src="http://whtjdrms1282.dothome.co.kr/img/dcu_logo.png" width="200"></a>
+			</h1>
+			<!--로고 끝-->
+
+			<!--메인메뉴 시작-->
+			<ul style="float:right;">
+				<li><a href="#">대학안내</a></li>
+				<li><a href="#">학과안내</a></li>
+				<li><a href="#">입학안내</a></li>
+				<li><a href="#">교육/생활</a></li>
+				<li><a href="#">진로/취업</a></li>
+				<li><a href="#">연구/산학</a></li>
+				<li><a href="#">학사안내</a></li>
+				<li><a href="http://whtjdrms1282.dothome.co.kr/board/list.php">커뮤니티</a></li>
+				<li><a href="#">홍보관</a></li>
+			</ul>
+			<!--메인메뉴 끝-->
+
+		</div>
+		<!--로고 및 메인메뉴 끝-->
+	</div>
+	<!--헤더 끝-->

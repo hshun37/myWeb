@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script>
+  $(document).ready(function(){
+	$('textarea').keyup(function(){ 
+	//keyup   keypress(영어만 지원함)   keydown
+	var t_length=$(this).val().length;
+	var r_length=150-t_length;
+		$('h5').html(r_length);
+	
+	/*
+	if(r_length >= 0) 
+	{
+		$('h5').css('color','black');
+	}else{
+		$('h5').css('color','red');
+		alert('더 이상 글을 입력할 수 없습니다.');
+	}
+	*/
+
+	if(r_length <= 0)
+	{
+		alert("더 이상 글을 입력할 수 없습니다.");
+	}
+
+	});
+  });
+  </script>
+ </head>
+ <body>
+  <div>
+	<p>댓글 작성하기</p>
+	<h5>150자</h5>
+	<textarea cols="70" rows="5"></textarea>
+  </div>
+ </body>
+</html>
+
+
+
+
+

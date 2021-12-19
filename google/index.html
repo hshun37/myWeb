@@ -1,0 +1,77 @@
+<?php
+include "./common/session.php"
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/dab690a483.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+        <!--머리 시작-->
+        <div class="navbar">
+            <a href="../google/board/list.php" class="nav-item">게시판</a>
+            <a href="#" class="nav-item">이미지</a>
+            <a href="#"><i class="fas fa-bars"></i></a>
+            <?php
+            if(!isset($_SESSION['memberID'])){
+            ?>
+            <a href="../google/sign/sign.php" class="nav-item">로그인</a>
+            <?php
+            } else {
+                // $name =  $_SESSION['nickname'];
+                //$_SESSION['nickname'] = $_GET['nickname'];
+            ?>
+			<?php echo $_SESSION['nickName'];?>님
+            <a href="../google/sign/signOut.php">로그아웃</a>
+            <?php
+            }
+            ?>
+
+        </div>
+        <!--머리 끝-->
+        <!--몸통 시작-->
+        <div class="main">
+            <a href="#"><img src="img/google_img.png" width="272"></a>
+            <div class="input-area">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" class="input-box">
+                <i class="fas fa-microphone mic-icon"></i>
+            </div>
+            <div class="button-area">
+                <button class="button-style">Google Search</button>
+                <button class="button-style">I'm feeling lucky</button>
+            </div>
+        </div>
+        <!--몸통 끝-->
+        
+        <!--바닥 시작-->
+        <div class="footer">
+            <div class="first-line">
+                대한민국
+            </div>
+            <div class="second-line">
+
+                <span class="margin_left">
+                    <a href="#">Google 정보</a>
+                    <a href="#">광고</a>
+                    <a href="#">비즈니스</a>
+                    <a href="#">검색의 원리</a>
+                </span>
+
+                <span class="second-line-second margin_right">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">약관</a>
+                    <a href="#">설정</a>
+                </span>
+            </div>
+        </div>
+        <!--바닥 끝-->
+
+</body>
+</html>

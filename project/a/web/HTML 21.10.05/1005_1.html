@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	/*.sp1{
+		position:static;
+		top:100px; /*적용이 안됨
+		background:red;
+		width:400px;
+		height:50px;
+		}
+		
+	.sp2{
+		position:relative;
+		left:50px;
+		top:250px;
+		background:blue;
+		width:400px;
+		height:50px;
+		}
+		*/
+	.sp1{
+		color:white;
+		position:absolute;
+		top:200px;
+		left:100px;
+		background:red;
+		width:400px;
+		height:300px;
+		z-index:9999; /*z-index의 값이 높을 수록 앞에 보이게 된다.*/
+		}
+
+	.sp2{
+		color:white;
+		position:relative;
+		left:100px;
+		top:500px;
+		background:blue;
+		width:400px;
+		height:100px;
+		z-index:111111;
+		overflow:hidden;
+		}
+
+/*	.fix{
+		color:white;
+		position:fixed;
+		top:5px;
+		right:5px;
+		background:green;
+		width:300px;
+		height:50px;
+		}
+		*/
+	
+	img{
+	margin:10px;
+	float:left;
+		}
+	
+	.layout{
+			clear:both;
+			/*clear:left/right*/
+			}
+
+  </style>
+ </head>
+ <body>
+  <!--
+  <레이아웃의 position 속성>
+  1. position : static -> 문서흐름에 맞는 레이아웃 위치
+  2. position : relative -> static위치값에서 상대적으로 얼마나 떨어져 있는지에 대한 레이아웃 위치
+  3. position : absolute -> 문서와 상관없이 전체 페이지를 기준으로 원하는 위치의 레이아웃
+  4. position : fixed -> 고정된 위치
+
+  overflow : hidden/scroll -> 원하는 구조 범위를 벗어나면 숨김 또는 스크롤바로 처리
+  float : right/left -> 화면의 나란히 배치
+  -->
+
+  <p>웹 페이지 레이아웃 입니다.</p>
+  <p><img src="e.jpg" width="150">
+  이미지와 함께 구성하는 웹 페이지 레이아웃입니다.
+  이미지와 함께 구성하는 웹 페이지 레이아웃입니다.
+  이미지와 함께 구성하는 웹 페이지 레이아웃입니다.
+  이미지와 함께 구성하는 웹 페이지 레이아웃입니다.
+  이미지와 함께 구성하는 웹 페이지 레이아웃입니다.<p>
+
+  <div class="layout">대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교대구가톨릭대학교</div>
+  <br><br><br><br><br><br>
+
+  <p class="sp1">정적 위치 설정</p>
+  <div class="sp2">정적 위치 설정</div>
+  <p class="sp3">기본 위치 설정</p>
+  <p class="fix">고정 위치 설정
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+  <p>테스트</p>
+
+
+ </body>
+</html>

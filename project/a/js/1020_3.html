@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script>
+  	$(document).ready(function(){
+		/*
+		$('.hide').click(function(){
+			$('.page').hide();
+		*/
+		
+		/*
+		$('.su').click(function(){
+			$('.page').slideUp('fast');
+		});
+		*/
+		
+		/*
+		$('.fo').click(function(){
+			$('.page').fadeOut('fast');
+		});
+		*/
+
+		/*
+		$('.show').click(function(){
+			$('.page').show();
+		*/
+		
+		/*
+		$('.sd').click(function(){
+			$('.page').slideDown('slow');
+		});
+		*/
+
+		/*
+		$('.fi').click(function(){
+			$('.page').fadeIn('slow');
+		});
+		*/
+
+		$('.toggle').click(function(){
+			$('.page').toggle('slow');
+		
+		});
+		
+		$('.stoggle').click(function(){
+			$('.page').slideToggle('slow');
+		
+		});
+		
+		$('.ftoggle').click(function(){
+			$('.page').fadeToggle('slow');
+		
+		});
+		//slow:천천히  normal:보통  fast:빠르게   를 설정할 수 있다.
+	});
+  </script>
+
+ </head>
+ <body>
+  <button class="toggle">버튼</button>
+  <button class="stoggle">버튼</button>
+  <button class="ftoggle">버튼</button>
+
+
+
+
+  <!--
+  <button class="hide">화면감추기</button>
+  <button class="show">화면보이기</button>
+  <button class="su">슬라이드업</button>
+  <button class="sd">슬라이드다운</button>
+  <button class="fo">페이드아웃</button>
+  <button class="fi">페이드인</button>
+  -->
+
+ 
+  <div class="page">
+	<h1>대구가톨릭대학교</h1>
+	<p>경북 경산시 하양읍 금락리 OOO-OO</p>
+  </div>
+ </body>
+</html>

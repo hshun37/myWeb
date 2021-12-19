@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	/* 후손선택자 */
+	/*div ul {color:red}
+	div h2 {color:yellow;background:blue;}*/
+	
+	/* 자손선택자 */
+	/*body > div > h3 {color:blue;}*/
+	
+	/* 인접형제선택자 */
+	/*h1 + h2 + ul {color:red;}*/
+
+	/* 그룹 선택자 */
+	h1, h2, ul {color:red;}
+
+	div{
+		background:yellow;
+		width:300px;
+
+		padding-top:40px;
+		padding-bottom:40px;
+		padding-left:25px;
+		padding-right:25px;
+
+		/*border:5px solid #000;
+		border-bottom:5px dotted #000;
+		border-right:5px dotted #000;*/
+		
+		/*border-style:dotted dashed solid double; /*top right bottom left*/
+		border-top:5px solid red;
+		border-bottom:5px solid red;
+		/*border-width:thin(대략'1'정도)/medium(대략'3'정도)/thick(대략'5'정도)
+		border-sytle:solid(실선)/dotted(점선)/none(선없음)/double(이중선)
+		/groove(오목하게)/dashed(파선)/inset(안쪽을 오목하게)/outset(바깥쪽을 오목하게)
+		border-color:색상값*/
+
+		/*margin-top:50px;
+		margin-left:100px;*/
+		/*margin:100px 300px 400px 200px; /*top right bottom left*/
+		/*margin:100px 30px 400px; /*top right,left bottom*/
+		/*margin:100px 300px;/*top,bottom right,left*/
+
+		margin : 25px 0px;
+	}
+		.r1{font-size:20px;
+		font-weight:bold;
+		background:pink;
+		width:500px;
+		padding:30px;
+		border:1px solid #000;
+		/*border-radius:10px;
+		border-top-left-radius:20px;
+		border-bottom-right-radius:20px;
+		/*border-top-left-radius : 상단왼쪽모서리 
+		border-top-right-radius : 상단오른쪽모서리
+		border-bottom-right-radius : 하단오른쪽모서리
+		border-bottom-left-radius : 하단왼쪽모서리
+		*/
+		border-radius:5px 20px 50px 10px;
+		}
+		.r2 {color:white;
+		background:green;
+		border:1px solid #000;
+		width:600px;
+		padding:30px;
+		/* 박스그림자 */
+		/*box-shadow : 수평 수직 흐림 번짐 색상 효과*/
+		box-shadow : 10px 10px 20px 2px black;
+		}
+  </style>
+ </head>
+ <!--
+ <body>
+	<div>
+		<h1>형제1</h1>
+		<h2>형제2</h2>
+		<ul>목록
+			<li>주제1</li>
+			<li>주제2</li>
+		</ul>
+	</div>
+	<h3>CSS테스</h3>
+	<p>연습입니다.</p>
+	<h3>JAVASCRIPT</h3>
+
+		<ul>후손선택자
+			<li>후손1</li>
+			<li>후손2</li>
+		</ul>
+	</div>
+
+	<h3>CSS3 다른 연습</h3>
+
+ </body>
+ -->
+ <body>
+ 	<p>CSS3의 중요한 박스모델입니다.</p>
+	<div>웹 페이지의 레이아웃을 설정하는 소스코드입니다.</div>
+
+	<h1 class="r1">둥근 모서리 연습1</h1>
+	<h1 class="r2">둥근 모서리 연습2</h1>
+	<h1 class="r3">둥근 모서리 연습3</h1>
+	<h1 class="r4">둥근 모서리 연습4</h1>
+
+ </body>
+</html>
+
+
+
+
+
+
+

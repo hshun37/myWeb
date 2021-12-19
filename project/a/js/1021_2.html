@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <style>
+  	div {
+		width:100px;
+		height:50px;
+		text-align:center;
+		background:blue;
+		border-radius:20px;
+		color:#fff;
+		line-height:50px;
+		}
+  </style>
+
+  <script>
+  	$(document).ready(function(){
+		$('div').hover(function(){
+			$(this).css('opacity',0.5);
+		},function(){
+			$(this).css('opacity',1);
+		});;
+	});
+  </script>
+ </head>
+ <body>
+	<div>버튼</div>
+	<!--마우스를 오버했을 경우 투명도 조절-->
+
+ </body>
+</html>
+
+
+
+
+
+

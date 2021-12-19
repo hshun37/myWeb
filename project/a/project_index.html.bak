@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Diary</title>
+  
+  <!--초기화 css-->
+  <link rel="stylesheet" href="css/common.css">
+  
+  <!--레이아웃 관련 css-->
+  <link rel="stylesheet" href="css/layout.css">
+  
+ </head>
+ <body><img scr = "img/background1.jpg>
+ 
+ <!--전체를 감싸는 구조-->
+  <div id="wrap">
+	<!--line 시작-->
+
+	<?php
+		include "inc/header.html";
+		?>
+	<div class="line">
+
+	</div>
+	<!--line 끝-->
+
+	<!--메인 이미지 시작-->
+	<div class="mvisual">
+		<div class="main_slide">
+			<ul>
+				<li><a href="#"><img src="img/main.png"></a></li>
+			</ul>
+		</div>
+	
+	</div>
+	<!--메인 이미지 끝-->
+	<!--학교 소개 시작-->
+	<div class="main_depart">
+		<div class="marea">
+			<div class="mtit">
+				<h2>DCU 소개</h2>
+				<p>정부가 인정한 '역량 높고 내실 있는 대학'</p>
+			</div>
+			
+			<div>
+				<ul>
+					<li><a href="#">사범대학</a></li>
+					<li><a href="#">사회과학대학</a></li>
+					<li><a href="#">약학대학</a></li>
+					<li><a href="#">간호대학</a></li>
+					<li><a href="#">의과대학</a></li>
+					<li><a href="#">바이오메디대학</a></li>
+					<li><a href="#">소프트웨어대학</a></li>
+					<li><a href="#">공과대학</a></li>
+					<li><a href="#">신학대학</a></li>
+					<li><a href="#">글로벌비지니스대학</a></li>
+					<li><a href="#">프란체스코칼리지</a></li>
+					<li><a href="#">유스티노자유대학</a></li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<!--학교 소개 끝-->
+  </div>
+  <!--전체를 감싸는 구조 끝-->
+ </body>
+</html>

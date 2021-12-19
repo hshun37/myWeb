@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+ 
+ <script>
+ /*
+	$(document).ready(function(){
+		$('a').click(function(event){
+			alert('네이버로 이동합니다.');
+			
+			event.preventDefault();//기본 이벤트를 제거
+			});
+		});
+		*/
+ </script>
+
+ <script>
+	$(document).ready(function(){
+		$('form').submit(function(event){
+			var value = $('input').val();
+
+			if(value.replace(/[ㄱ-힣]/g, '').length==0) //한글만 사용할 수 있는 정규식
+			//a-zA-z0-9
+			{
+				alert('이름이 입력되었습니다.');
+			} else {
+				alert('한글 이름을 입력해주세요.');
+				event.preventDefault();
+			}
+		});
+	});
+
+ </script>
+ </head>
+ <body>
+	<form>
+ 		<label>이름</label>
+		<input type="text" name="name">
+		<input type="submit" value="등록">
+	</form>
+  
+  <!--
+  <a href="http://www.naver.com">네이버 바로가기</a>
+  -->
+
+ </body>
+</html>

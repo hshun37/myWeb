@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+
+  <style>
+  	div{width:50px;height:50px;background:blue;}
+  </style>
+
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+  <script>
+	$(document).ready(function(){
+		$('div').click(function(){
+			//변수 선언
+			var d_width=$(this).css('width');
+			var d_height=$(this).css('height');
+			
+			//증가 animate
+			/*
+			$(this).animate({
+				
+				width: parseInt(d_width) + 50,
+				height:parseInt(d_height) + 50
+				
+			},'slow');
+			*/
+
+			$(this).animate({
+				width:'+=50',
+				height:'+=50'
+			},'slow');
+		});
+	});
+  </script>
+ </head>
+ <body>
+	<div></div>
+ </body>
+</html>
+
+
+
+
