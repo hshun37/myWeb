@@ -14,3 +14,22 @@ img {
     height: 100%;
     width: 100%;
 }
+
+.container {
+    width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #bcbcbc;
+}
+
+.nav {
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.main {
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid black;
+}
