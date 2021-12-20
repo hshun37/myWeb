@@ -10,12 +10,17 @@ body, html {
     height: 100%;
 }
 
+h2, span, li {
+    color: white;
+}
+
 img {
     height: 100%;
     width: 100%;
 }
 
 .container {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFqSP0SQjAdqsWNx-p4tprWNVxccMrpUqaxg&usqp=CAU");
     width: 940px;
     margin: 10px auto;
     padding: 20px;

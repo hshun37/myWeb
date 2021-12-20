@@ -1,0 +1,68 @@
+/* 전체 적용 */
+li {
+    list-style:none;
+    color: gray;
+}
+
+a {
+    text-decoration:none;
+    color: gray;
+}
+
+h2 {
+    color: black;
+}
+
+.container-css {
+    width: 1320px;
+    margin: 10px auto;
+}
+
+/* .box {
+    border: 1px solid red;
+} */
+
+/* 전체 적용 */
+
+
+/*머리 레이아웃 시작*/
+.header-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.header-3 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-2-li {
+    margin: auto;
+}
+/*머리 레이아웃 끝*/
+
+
+/*몸통 레이아웃 시작*/
+.main-photo{
+    width: 100%;
+    height: 650px;
+    margin-top: 30px;
+}
+.main-talk{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-gallery {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/*몸통 레이아웃 끝*/
